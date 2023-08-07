@@ -1,0 +1,29 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: AHT20 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":   2, "label": "AHT20_1", "color": "red"},
+                {"col":  15, "label": "AHT20_2", "color": "blue"},
+                {"col":  26, "label": "AHT20_3", "color": "green"},
+                {"col":  36, "label": "AHT20_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature AHT20"
+    },
+    {"yaxis": {"text": "rel. Hum. %"},
+     "values": [
+                {"col":   3, "label": "AHT20_1", "color": "red"},
+                {"col":  16, "label": "AHT20_2", "color": "blue"},
+                {"col":  27, "label": "AHT20_3", "color": "green"},
+                {"col":  37, "label": "AHT20_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity AHT20"
+    }
+   ]
+}

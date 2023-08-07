@@ -1,0 +1,29 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 800,
+  "title":  "Sensor-Test: Absolute Pressure all Sensors",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Pressure hPa"},
+     "values": [
+                {"col":   8, "label": "BMP280_1", "color": "red"},
+                {"col":  21, "label": "BMP280_2", "color": "blue"},
+                {"col":  32, "label": "BMP280_3", "color": "green"},
+                {"col":  43, "label": "BMP280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Pressure BMP280"
+    },
+    {"yaxis": {"text": "Pressure hPa"},
+     "values": [
+                {"col":  11, "label": "BME280_1", "color": "red"},
+                {"col":  24, "label": "BME280_2", "color": "blue"},
+                {"col":  35, "label": "BME280_3", "color": "green"},
+                {"col":  46, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Pressure BME280"
+    }
+   ]
+}
