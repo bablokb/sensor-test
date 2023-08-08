@@ -37,7 +37,7 @@ data it is recommended to install "py-datamon" and run e.g.
 
     py-datamon -c configs/bme280-absolute.json data/sensor-test1-combined.csv
 
-![](images/bme280-absolute.png)
+![](plots/bme280-absolute.png)
 
 
 
