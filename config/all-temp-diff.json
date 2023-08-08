@@ -1,0 +1,73 @@
+{ "cols": 2,
+  "width":  1920,
+  "height": 1080,
+  "title":  "Sensor-Test: Difference to mean temperature all sensors",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "yaxis": {"text": "Temp °C", "min": -1, "max": 1},
+  "plots": [
+     {"values": [
+                {"col":   2, "label": "AHT20_1", "color": "red"},
+                {"col":  15, "label": "AHT20_2", "color": "blue"},
+                {"col":  26, "label": "AHT20_3", "color": "green"},
+                {"col":  36, "label": "AHT20_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature AHT20"
+    },
+     {"values": [
+                {"col":   4, "label": "MCP9808_1", "color": "red"},
+                {"col":  17, "label": "MCP9808_2", "color": "blue"},
+                {"col":  28, "label": "MCP9808_3", "color": "green"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature MCP9808"
+    },
+     {"values": [
+                {"col":  18, "label": "AM2320_1", "color": "red"},
+                {"col":  29, "label": "AM2320_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature AM2320"
+    },
+     {"values": [
+                {"col":   5, "label": "HTU31D_1", "color": "red"},
+                {"col":  40, "label": "HTU31D_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature HTU31D"
+    },
+     {"values": [
+                {"col":   7, "label": "BMP280_1", "color": "red"},
+                {"col":  20, "label": "BMP280_2", "color": "blue"},
+                {"col":  31, "label": "BMP280_3", "color": "green"},
+                {"col":  42, "label": "BMP280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature BMP280"
+    },
+     {"values": [
+                {"col":   9, "label": "BME280_1", "color": "red"},
+                {"col":  22, "label": "BME280_2", "color": "blue"},
+                {"col":  33, "label": "BME280_3", "color": "green"},
+                {"col":  44, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature BME280"
+    },
+     {"values": [
+                {"col":  12, "label": "DS18B20_1", "color": "red"},
+                {"col":  13, "label": "DS18B20_2", "color": "blue"},
+                {"col":  14, "label": "DS18B20_3", "color": "green"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature DS18B20"
+    },
+     {"values": [
+                {"col":  12, "label": "SHT45_1", "color": "red"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature SHT45"
+    }
+   ]
+}
