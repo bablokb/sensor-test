@@ -1,0 +1,29 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: BMP280 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":   7, "label": "BMP280_1", "color": "red"},
+                {"col":  20, "label": "BMP280_2", "color": "blue"},
+                {"col":  31, "label": "BMP280_3", "color": "green"},
+                {"col":  42, "label": "BMP280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature BMP280"
+    },
+    {"yaxis": {"text": "Pressure hPa"},
+     "values": [
+                {"col":   8, "label": "BMP280_1", "color": "red"},
+                {"col":  21, "label": "BMP280_2", "color": "blue"},
+                {"col":  32, "label": "BMP280_3", "color": "green"},
+                {"col":  43, "label": "BMP280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Pressure BMP280"
+    }
+   ]
+}

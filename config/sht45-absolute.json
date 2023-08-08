@@ -1,0 +1,23 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: SHT45 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":  12, "label": "SHT45_1", "color": "red"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature SHT45"
+    },
+    {"yaxis": {"text": "rel. Hum. %"},
+     "values": [
+                {"col":  39, "label": "SHT45_1", "color": "red"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity SHT45"
+    }
+   ]
+}

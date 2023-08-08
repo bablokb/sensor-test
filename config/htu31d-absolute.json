@@ -1,0 +1,25 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: HTU31D (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":   5, "label": "HTU31D_1", "color": "red"},
+                {"col":  40, "label": "HTU31D_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature HTU31D"
+    },
+    {"yaxis": {"text": "rel. Hum. %"},
+     "values": [
+                {"col":   6, "label": "HTU31D_1", "color": "red"},
+                {"col":  41, "label": "HTU31D_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity HTU31D"
+    }
+   ]
+}

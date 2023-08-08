@@ -1,0 +1,25 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: AM2320 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":  18, "label": "AM2320_1", "color": "red"},
+                {"col":  29, "label": "AM2320_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature AM2320"
+    },
+    {"yaxis": {"text": "rel. Hum. %"},
+     "values": [
+                {"col":  19, "label": "AM2320_1", "color": "red"},
+                {"col":  30, "label": "AM2320_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity AM2320"
+    }
+   ]
+}

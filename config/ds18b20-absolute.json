@@ -1,0 +1,18 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: DS18B20 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C"},
+     "values": [
+                {"col":  12, "label": "DS18B20_1", "color": "red"},
+                {"col":  13, "label": "DS18B20_2", "color": "blue"},
+                {"col":  14, "label": "DS18B20_3", "color": "green"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature DS18B20"
+    }
+   ]
+}
