@@ -1,0 +1,48 @@
+{ "cols": 2,
+  "width":  1920,
+  "height": 1080,
+  "title":  "Sensor-Test: Difference to mean Humidity all Sensors",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time"},
+  "yaxis": {"text": "rel. Hum. %", "min": -7, "max": 8},
+  "plots": [
+     {"values": [
+                {"col":   3, "label": "AHT20_1", "color": "red"},
+                {"col":  16, "label": "AHT20_2", "color": "blue"},
+                {"col":  27, "label": "AHT20_3", "color": "green"},
+                {"col":  37, "label": "AHT20_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity AHT20"
+    },
+     {"values": [
+                {"col":  19, "label": "AM2320_1", "color": "red"},
+                {"col":  30, "label": "AM2320_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity AM2320"
+    },
+     {"values": [
+                {"col":   6, "label": "HTU31D_1", "color": "red"},
+                {"col":  41, "label": "HTU31D_2", "color": "blue"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity HTU31D"
+    },
+     {"values": [
+                {"col":  10, "label": "BME280_1", "color": "red"},
+                {"col":  23, "label": "BME280_2", "color": "blue"},
+                {"col":  34, "label": "BME280_3", "color": "green"},
+                {"col":  45, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity BME280"
+    },
+     {"values": [
+                {"col":  39, "label": "SHT45_1", "color": "red"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity SHT45"
+    }
+   ]
+}
