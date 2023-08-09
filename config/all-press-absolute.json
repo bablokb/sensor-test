@@ -4,9 +4,9 @@
   "title":  "Sensor-Test: Absolute Pressure all Sensors",
   "x": {"col":   0, "type": "datetime"},
   "xaxis": {"text": "time"},
+  "yaxis": {"text": "Pressure hPa", "min": 985, "max": 1020},
   "plots": [
-    {"yaxis": {"text": "Pressure hPa"},
-     "values": [
+     {"values": [
                 {"col":   8, "label": "BMP280_1", "color": "red"},
                 {"col":  21, "label": "BMP280_2", "color": "blue"},
                 {"col":  32, "label": "BMP280_3", "color": "green"},
@@ -15,8 +15,7 @@
      "legend": {"loc": null},
      "title": "Pressure BMP280"
     },
-    {"yaxis": {"text": "Pressure hPa"},
-     "values": [
+    {"values": [
                 {"col":  11, "label": "BME280_1", "color": "red"},
                 {"col":  24, "label": "BME280_2", "color": "blue"},
                 {"col":  35, "label": "BME280_3", "color": "green"},
