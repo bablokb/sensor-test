@@ -1,0 +1,40 @@
+{ "cols": 1,
+  "width":  1200,
+  "height": 900,
+  "title":  "Sensor-Test: BME280 (absolute values)",
+  "x": {"col":   0, "type": "datetime"},
+  "xaxis": {"text": "time",
+            "min": "2023-08-04T14:00:00", "max": "2023-08-04T22:30:00"},
+  "plots": [
+    {"yaxis": {"text": "Temp °C", "min": 5, "max": 24},
+     "values": [
+                {"col":   9, "label": "BME280_1", "color": "red"},
+                {"col":  22, "label": "BME280_2", "color": "blue"},
+                {"col":  33, "label": "BME280_3", "color": "green"},
+                {"col":  44, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Temperature BME280"
+    },
+    {"yaxis": {"text": "rel. Hum. %", "min": 40, "max": 80},
+     "values": [
+                {"col":  10, "label": "BME280_1", "color": "red"},
+                {"col":  23, "label": "BME280_2", "color": "blue"},
+                {"col":  34, "label": "BME280_3", "color": "green"},
+                {"col":  45, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Relative Humidity BME280"
+    },
+    {"yaxis": {"text": "Pressure hPa", "min": 980, "max": 1010},
+     "values": [
+                {"col":  11, "label": "BME280_1", "color": "red"},
+                {"col":  24, "label": "BME280_2", "color": "blue"},
+                {"col":  35, "label": "BME280_3", "color": "green"},
+                {"col":  46, "label": "BME280_4", "color": "yellow"}
+               ],
+     "legend": {"loc": null},
+     "title": "Pressure BME280"
+    }
+   ]
+}
