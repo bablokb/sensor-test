@@ -23,6 +23,10 @@ Data
 
 Raw and processed data is within the [`data`-directory](data/Readme.md).
 
+Besides raw and clean data, there is also a calculated "difference from
+mean". Since the setup did not include a high precision reference, this
+mean is likely to be the most exact measurement.
+
 
 Plots
 -----
@@ -39,6 +43,35 @@ data it is recommended to install "py-datamon" and run e.g.
 
 ![](plots/bme280-absolute.png)
 
+
+Results
+-------
+
+The test did not bring up any unexpected results. All sensors are within
+the specifications as claimed by their datasheets.
+
+Looking at difference to mean, both the most expensive sensor (SHT45) and
+the cheapest sensor (DS18B20) did a very good job.
+
+Some sensors seem to underestimate (e.g. AHT20, BME280), some seem to
+overestimate (e.g. HTU31D). But this is not systematic and not alway true
+for all specimen of a sensor.
+
+All in all, the measurement setup will have a higher influence on the
+measured values than the choice of the sensor.
+
+Some Recommendations:
+
+  - Separate sensors from sources that influence the measurements. This
+    implies /not/ to use a Pi or even worse a sensor Pi-hat.
+  - Shutdown the MCU or use at least use deep-sleep modes inbetween
+    measurements to minimize heat-creap.
+  - Check the sensor-initialization. Some drivers don't use ideal
+    setups. The BMx280 is a very good example. The datasheet gives
+    advice on how to initialize the sensor but some drivers/docs
+    don't make it transparent on what they do. The Arduino-driver
+    for the BME280 is perfect in this regard. The driver even provides
+    presets to easily switch between settings.
 
 
 License for the Breakout Holder
