@@ -1,7 +1,7 @@
 { "cols": 1,
   "width":  1200,
   "height": 800,
-  "title":  "Sensor-Test: Difference to mean ressure all Sensors",
+  "title":  "Sensor-Test: Difference to mean pressure all Sensors",
   "x": {"col":   0, "type": "datetime"},
   "xaxis": {"text": "time"},
   "yaxis": {"text": "Pressure hPa"},
