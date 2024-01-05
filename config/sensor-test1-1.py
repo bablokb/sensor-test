@@ -40,7 +40,7 @@ sens_i2c0 = "aht20(0) mcp9808(0) htu31d(0) bmp280(0) bme280(0) ds18b20"
 sens_i2c1 = "aht20(1) mcp9808(1) am2320(1) bmp280(1) bme280(1)"
 
 SENSORS      = f"battery {sens_i2c0} {sens_i2c1}"
-CSV_FILENAME = f'/sd/sensor-test-{{ID}}.csv'
+CSV_FILENAME = f'/sd/sensor-test1-{{ID}}.csv'
 
 LOGGER_NAME  = 'Sensor-Test'
 LOGGER_ID    = 'ST1'
