@@ -50,12 +50,14 @@ Results
 The test did not bring up any unexpected results. All sensors are within
 the specifications as claimed by their datasheets.
 
-Looking at difference to mean, both the most expensive sensor (SHT45) and
-the cheapest sensor (DS18B20) did a very good job.
+Looking at difference to mean, the cheapest sensor (DS18B20) did the
+best job. The main drawback of the DS18B20 is that it only measures
+temperature.
 
 Some sensors seem to underestimate (e.g. AHT20, BME280), some seem to
 overestimate (e.g. HTU31D). But this is not systematic and not alway true
-for all specimen of a sensor.
+for all specimen of a sensor, so this should not be seen as a property
+of the sensor, but as an artifact of the given measurement series.
 
 All in all, the measurement setup will have a higher influence on the
 measured values than the choice of the sensor.
@@ -64,7 +66,7 @@ Some Recommendations:
 
   - Separate sensors from sources that influence the measurements. This
     implies /not/ to use a Pi or even worse a sensor Pi-hat.
-  - Shutdown the MCU or use at least use deep-sleep modes inbetween
+  - Shutdown the MCU or at least use deep-sleep modes inbetween
     measurements to minimize heat-creap.
   - Check the sensor-initialization. Some drivers don't use ideal
     setups. The BMx280 is a very good example. The datasheet gives

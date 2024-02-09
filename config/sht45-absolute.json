@@ -7,7 +7,7 @@
   "plots": [
     {"yaxis": {"text": "Temp °C"},
      "values": [
-                {"col":  12, "label": "SHT45_1", "color": "red"}
+                {"col":  38, "label": "SHT45_1", "color": "red"}
                ],
      "legend": {"loc": null},
      "title": "Temperature SHT45"
